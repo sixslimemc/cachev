@@ -9,7 +9,7 @@ data modify storage slimecore:in manifest.pack.version set value {major:0, minor
 data modify storage slimecore:in manifest.pack.url set value "https://github.com/sixslimemc/cachev/releases/download/v0.1.0/sixslime.cachev.0.1.0.zip"
 
 data modify storage slimecore:in manifest.pack.display.name set value "CachEv"
-data modify storage slimecore:in manifest.pack.display.summary set value "Library for function output caching."
+data modify storage slimecore:in manifest.pack.display.summary set value "Provides an API for caching output of pure functions."
 data modify storage slimecore:in manifest.pack.display.author_name set value "SixSlime"
 
 data modify storage slimecore:in manifest.pack.display.links.author set value "https://github.com/sixslimemc"

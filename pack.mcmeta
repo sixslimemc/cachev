@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": "Library for function output caching. (Library)",
+    "description": "Provides an API for caching output of pure functions. (Library)",
     "min_format": 101,
     "max_format": 101
   }
