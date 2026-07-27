@@ -1,4 +1,6 @@
 
-dispatch minecraft:storage[cachev:data] to struct Data {
+use super::def::Cache
 
+dispatch minecraft:storage[cachev:data] to struct Data {
+    cache: Cache
 }

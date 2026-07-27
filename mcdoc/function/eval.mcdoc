@@ -1,18 +1,18 @@
 
-use super::super::def::CachevId
-use super::super::def::CachevInput
-use super::super::def::CachevOutput
-use super::super::def::CachevReturn
+use super::super::def::EvalId
+use super::super::def::EvalInput
+use super::super::def::EvalOutput
+use super::super::def::EvalReturn
 
 struct In {
-    id: CachevId,
-    input: CachevInput,
+    id: EvalId,
+    input: EvalInput,
     force_run?: boolean,
 }
 
 struct Out {
-    result: CachevOutput,
+    result: EvalOutput,
     from_cache: boolean,
 }
 
-type Return = CachevReturn
+type Return = EvalReturn

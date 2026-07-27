@@ -1,5 +1,18 @@
 
-type CachevId = string
-type CachevInput = any
-type CachevOutput = any
-type CachevReturn = int
+type EvalId = string
+type EvalInput = any
+type EvalOutput = any
+type EvalReturn = int
+
+type CacheKey = string
+
+struct CacheEntry {
+    out: EvalOutput,
+    return: EvalReturn,
+}
+
+struct Cache {
+    [EvalId]: struct {
+        [CacheKey]: [CacheEntry] @ 1..
+    }
+}

@@ -1,0 +1,13 @@
+
+use super::super::super::def::CacheKey
+use super::super::super::def::EvalInput
+
+struct In {
+    input: EvalInput
+}
+
+struct Out {
+    result: CacheKey
+}
+
+type Return = 1

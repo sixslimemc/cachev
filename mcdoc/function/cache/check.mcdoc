@@ -1,18 +1,18 @@
 
-use super::super::super::def::CachevId
-use super::super::super::def::CachevInput
-use super::super::super::def::CachevOutput
-use super::super::super::def::CachevReturn
+use super::super::super::def::EvalId
+use super::super::super::def::EvalInput
+use super::super::super::def::EvalOutput
+use super::super::super::def::EvalReturn
 
 struct In {
-    id: CachevId,
-    input: CachevInput,
+    id: EvalId,
+    input: EvalInput,
 }
 
 struct Out {
     result?: struct CachedEntry {
-        out: CachevOutput,
-        return: CachevReturn,
+        out: EvalOutput,
+        return: EvalReturn,
     }
 }
 
