@@ -16,3 +16,8 @@ struct Cache {
         [CacheKey]: [CacheEntry] @ 1..
     }
 }
+
+struct EvalDefinition {
+    id: EvalId,
+    command: #[command] string,
+}

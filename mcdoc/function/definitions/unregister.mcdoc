@@ -2,12 +2,9 @@
 use super::super::super::def::EvalId
 
 struct In {
-    id: EvalId,
+    ids: [EvalId]
 }
 
 struct Out {}
 
-enum(int) Return {
-    Success = 1,
-    DoesNotExist = 0,
-}
+type Return = 1

@@ -1,14 +1,11 @@
 
 use super::super::super::def::EvalId
+use super::super::super::def::EvalDefinition
 
 struct In {
-    id: EvalId,
-    command: #[command] string,
+    definitions: [EvalDefinition]
 }
 
 struct Out {}
 
-enum(int) Return {
-    NewEntry = 1,
-    Overwritten = 2,
-}
+type Return = 1
