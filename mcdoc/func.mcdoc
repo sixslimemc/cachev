@@ -1,8 +1,18 @@
 
 dispatch minecraft:storage[cachev:in] to struct In {
-
+    get_key: super::function::cache::get_key::In,
+    clear: super::function::cache::clear::In,
+    check: super::function::cache::check::In,
+    eval: super::function::eval::In,
+    register: super::function::definitions::register::In,
+    unregister: super::function::definitions::unregister::In,
 }
 
 dispatch minecraft:storage[cachev:out] to struct Out {
-
+    get_key: super::function::cache::get_key::Out,
+    clear: super::function::cache::clear::Out,
+    check: super::function::cache::check::Out,
+    eval: super::function::eval::Out,
+    register: super::function::definitions::register::Out,
+    unregister: super::function::definitions::unregister::Out,
 }
