@@ -1,0 +1,13 @@
+
+use super::super::super::def::CachevId
+
+struct In {
+    id: CachevId,
+}
+
+struct Out {}
+
+enum(int) Return {
+    Success = 1,
+    DoesNotExist = 0,
+}

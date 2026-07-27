@@ -1,0 +1,17 @@
+
+use super::super::super::def::CachevId
+use super::super::super::def::CachevInput
+use super::super::super::def::CachevOutput
+use super::super::super::def::CachevReturn
+
+struct In {
+    id: CachevId,
+    input?: CachevInput,
+}
+
+struct Out {}
+
+enum(int) Return {
+    Success = 1,
+    DoesNotExist = 0,
+}

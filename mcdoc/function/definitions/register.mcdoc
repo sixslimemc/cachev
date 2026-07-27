@@ -1,0 +1,14 @@
+
+use super::super::super::def::CachevId
+
+struct In {
+    id: CachevId,
+    command: #[command] string,
+}
+
+struct Out {}
+
+enum(int) Return {
+    NewEntry = 1,
+    Overwritten = 2,
+}

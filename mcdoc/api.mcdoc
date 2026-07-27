@@ -1,7 +1,12 @@
 
+use super::def::CachevInput
+use super::def::CachevOutput
 
 dispatch minecraft:storage[cachev:api] to struct Api {
-
+    eval: [struct EvalStackEntry {
+        in: CachevInput,
+        out: CachevOutput,
+    }]
 }
 
 

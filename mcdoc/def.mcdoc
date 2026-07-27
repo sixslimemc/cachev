@@ -1,0 +1,5 @@
+
+type CachevId = string
+type CachevInput = any
+type CachevOutput = any
+type CachevReturn = int

@@ -1,0 +1,18 @@
+
+use super::super::def::CachevId
+use super::super::def::CachevInput
+use super::super::def::CachevOutput
+use super::super::def::CachevReturn
+
+struct In {
+    id: CachevId,
+    input: CachevInput,
+    force_run?: boolean,
+}
+
+struct Out {
+    result: CachevOutput,
+    from_cache: boolean,
+}
+
+type Return = CachevReturn

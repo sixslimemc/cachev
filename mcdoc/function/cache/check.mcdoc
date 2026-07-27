@@ -1,0 +1,22 @@
+
+use super::super::super::def::CachevId
+use super::super::super::def::CachevInput
+use super::super::super::def::CachevOutput
+use super::super::super::def::CachevReturn
+
+struct In {
+    id: CachevId,
+    input: CachevInput,
+}
+
+struct Out {
+    result?: struct CachedEntry {
+        out: CachevOutput,
+        return: CachevReturn,
+    }
+}
+
+enum(int) Return {
+    Cached = 1,
+    NotCached = 0,
+}
