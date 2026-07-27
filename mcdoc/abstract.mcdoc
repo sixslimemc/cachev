@@ -1,0 +1,8 @@
+
+dispatch minecraft:storage[cachev:abstract/in] to struct AbstractIn {
+
+}
+
+dispatch minecraft:storage[cachev:abstract/out] to struct AbstractOut {
+
+}

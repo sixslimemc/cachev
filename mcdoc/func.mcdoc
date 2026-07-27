@@ -1,0 +1,8 @@
+
+dispatch minecraft:storage[cachev:in] to struct In {
+
+}
+
+dispatch minecraft:storage[cachev:out] to struct Out {
+
+}

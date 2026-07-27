@@ -1,0 +1,4 @@
+
+dispatch minecraft:storage[cachev:config] to struct Config {
+
+}
