@@ -7,6 +7,7 @@ type EvalReturn = int
 type CacheKey = (string | int)
 
 struct CacheEntry {
+    input: EvalInput,
     out: EvalOutput,
     return: EvalReturn,
 }

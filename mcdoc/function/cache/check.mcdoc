@@ -3,6 +3,7 @@ use super::super::super::def::EvalId
 use super::super::super::def::EvalInput
 use super::super::super::def::EvalOutput
 use super::super::super::def::EvalReturn
+use super::super::super::def::CacheEntry
 
 struct In {
     id: EvalId,
@@ -10,10 +11,7 @@ struct In {
 }
 
 struct Out {
-    result?: struct CachedEntry {
-        out: EvalOutput,
-        return: EvalReturn,
-    }
+    result?: CacheEntry,
 }
 
 enum(int) Return {
