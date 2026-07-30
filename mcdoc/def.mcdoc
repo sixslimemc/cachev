@@ -13,10 +13,13 @@ struct CacheEntry {
 
 struct Cache {
     [EvalId]: struct {
-        [CacheKey]: [CacheEntry] @ 1..
+        [CacheKey]: [CacheEntry] @ 1..,
     }
 }
 
+struct DefinitionMap {
+    [EvalId]: EvalDefinition,
+}
 struct EvalDefinition {
     id: EvalId,
     command: #[command] string,

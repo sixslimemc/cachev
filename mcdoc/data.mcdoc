@@ -1,6 +1,8 @@
 
 use super::def::Cache
+use super::def::DefinitionMap
 
 dispatch minecraft:storage[cachev:data] to struct Data {
-    cache: Cache
+    cache: Cache,
+    definition: DefinitionMap,
 }
