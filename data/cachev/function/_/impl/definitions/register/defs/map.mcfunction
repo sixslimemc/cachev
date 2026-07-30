@@ -5,4 +5,4 @@
 #--------------------
 
 $data modify storage cachev:data definition.'$(id)' set from storage cachev:_ v.register.this_def
-$data remove storage cachev:data cache.'$(id)'
+$data modify storage cachev:data cache.'$(id)' set value {}
