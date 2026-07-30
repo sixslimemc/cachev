@@ -1,5 +1,5 @@
 # IMPL > cachev : definitions/register
-# each
+# defs/each
 #--------------------
 # ../main
 #--------------------
