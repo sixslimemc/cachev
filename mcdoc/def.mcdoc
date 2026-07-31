@@ -8,7 +8,7 @@ type CacheKey = (string | int)
 
 struct CacheEntry {
     input: EvalInput,
-    out: EvalOutput,
+    output: EvalOutput,
     return: EvalReturn,
 }
 

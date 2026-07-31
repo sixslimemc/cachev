@@ -21,18 +21,18 @@ function cachev:_/impl/eval/get_definition with storage cachev:_ eval[-1].v
 
 # run:
 # - populate {..entry}
-data modify storage cachev:_ eval[-1].v.entry set value {input:{}, return:1, out:{}}
+data modify storage cachev:_ eval[-1].v.entry set value {input:{}, return:1, output:{}}
 data modify storage cachev:_ eval[-1].v.entry.input set from storage cachev:_ eval[-1].in.input
-data modify storage cachev:api eval append value {input:{}, out:{}}
+data modify storage cachev:api eval append value {input:{}, output:{}}
 data modify storage cachev:api eval[-1].input set from storage cachev:_ eval[-1].in.input
 execute store result storage cachev:_ eval[-1].v.entry.return int 1 run function cachev:_/impl/eval/run with storage cachev:_ eval[-1].v.definition
-data modify storage cachev:_ eval[-1].v.entry.out set from storage cachev:api eval[-1].out
+data modify storage cachev:_ eval[-1].v.entry.output set from storage cachev:api eval[-1].output
 data remove storage cachev:api eval[-1]
 
 # set cache:
 function cachev:_/impl/eval/set_cache/do
 
 # out:
-data modify storage cachev:_ eval[-1].out.out set from storage cachev:_ eval[-1].v.entry.out
+data modify storage cachev:_ eval[-1].out.output set from storage cachev:_ eval[-1].v.entry.output
 data modify storage cachev:_ eval[-1].out.from_cache set value false
 return run data get storage cachev:_ eval[-1].v.entry.return

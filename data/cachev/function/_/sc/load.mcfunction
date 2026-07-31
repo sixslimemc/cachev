@@ -10,4 +10,4 @@ scoreboard players reset *init _cachev
 
 execute unless score *init _cachev matches 1 run function cachev:_/sc/init
 
-function cachev:_/main/wipe_cache
+function cachev:_/main/wipe_data
